@@ -72,7 +72,7 @@ names(Datacompleted) <- c("Subjects","Activities",Features[FeaturesFilter,2])
 tidy_data = ddply(Datacompleted, c("Subjects","Activities"), colwise(mean))
 
 
-The following code line just saves the tidy data in an independent txt file.
+*The following code line just saves the tidy data in an independent txt file.*
 
 
 write.table(tidy_data, "tidy_data.txt", row.name=FALSE)
